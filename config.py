@@ -7,11 +7,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("19703932"))
-API_HASH = getenv("2fe31e84e0b537b505f528e62e114664")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("7292122932:AAG8hCvjbcF-MuM9IUxivPUGyF-MvdW84HQ")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("Mongo_Db_Url, None)
@@ -121,6 +121,7 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
 
 
 
